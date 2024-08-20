@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #f4e5d6;
+    
+
+}
+
+/* Home */
+.background {
+    background-image: url("./Assets/ayodhya.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.fo-si {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#blur-bg {
+    display: none;
+}
+
+.blur-bg {
+    background: rgb(237, 237, 237, .1);
+    backdrop-filter: blur(10px);
+}
+
+.box-shad {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+/* --- */
+
+/* About */
+.about-img {
+    background-image: url("./Assets/out.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 500px;
+}
+
+.about {
+    font-size: 40px;
+}
+
+.line {
+    display: inline-block;
+    height: 3px;
+    width: 100px;
+    background-color: #c07830;
+}
+
+.abo-para {
+    text-align: justify;
+}
+
+.abo-para a {
+    font-size: 18px;
+}
+/* --- */
+
+/* Navbar */
+.nav-bar-list,
+.nav-bar-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar-link>a {
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.nav-bar-link>a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-bar-font {
+    display: none;
+}
+
+.nav-sticky {
+    position: sticky;
+    top: 90%;
+}
+
+.bor-radi {
+    border-radius: 10px;
+}
+/* --- */
+
+/* Side navbar */
+.side-navbar {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -68%;
+    padding: 10px;
+    z-index: 1;
+    transition: 2s;
+}
+
+.side-navbar > p {
+    text-align: right;
+    font-size: 25px;
+}
+
+.navbar-ul {
+    list-style-type: none;
+    margin-left: 10%;
+}
+
+.side-navbar-link {
+    margin-top: 30px;
+}
+
+.side-navbar-link > a {
+    text-decoration: none;
+}
+
+.side-navbar-link > a:hover {
+    font-weight: bold;
+}
+/* --- */
+
+/* Rooms */
+#Rooms {
+    background-image: url("./Assets/baranti.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-shado li {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-shado li:hover {
+    background-color: black;
+    color: white;
+}
+
+.room-img {
+    background-image: url("./Assets/small.jpg");
+}
+
+.room-img-2 {
+    background-image: url("./Assets/large.jpg");
+}
+
+.room-img , .room-img-2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 1rem;
+}
+
+.room-img span , .room-img-2 span {
+    padding: 2px 8px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.room-img span:hover , .room-img-2 span:hover {
+    background-color: #000;
+}
+
+.iconHeartFill , #iconHeartFill {
+    display: none;
+}
+
+#Image1 , #Image2 {
+    display: none;
+    height: 100%;
+}
+
+#overlay1{
+    height: 100%;
+}
+
+.line2 {
+    display: inline-block;
+    height: 2px;
+    width: 60px;
+}
+/* --- */
+
+/* Gallery */
+#Gallery {
+    background-image: url("./Assets/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Gallery > .container-fluid img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    height: 240px;
+}
+
+#Gallery > .container-fluid img:hover {
+    padding: 10px;
+    background-color: black;
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+    height: 500px;
+}
+
+.line1 {
+    display: inline-block;
+    height: 2px;
+    width: 80px;
+}
+/* --- */
+
+/* Services */
+#Services {
+    background-image: url("./Assets/service.jpg");
+}
+/* --- */
+
+/* Contact */
+.top-fix {
+    position: relative;
+    top: -5%;
+}
+
+.top-fix > div {
+    width: 95%;
+}
+/* --- */
+
+#Services h2 , #Gallery h2 , #Rooms h2 , #About h2 , #Contact h2 , #Home h1{
+    letter-spacing: 5px;
+}
+/* --- */
+
+/* Footer */
+.footAlign {
+    text-align: justify;
+}
+/* --- */
+
+/* Media Query */
+/* xs */
+@media screen and (max-width:576px) {
+    .book-now {
+        display: none;
+    }
+
+    .mob-view {
+        display: none;
+    }
+}
+
+/* sm */
+@media screen and (min-width:576px) {
+    .mob-view {
+        display: none;
+    }
+}
+
+/* md */
+@media screen and (min-width:768px) {
+    .mob-view {
+        display: block;
+    }
+
+    .mob-view1 {
+        display: none;
+    }
+
+    .space-adjust {
+        margin: 12px 20px;
+    }
+    .fon-size {
+        font-size: 12px;
+    }
+    .hei-frame {
+        height: 550px;
+    }
+    .about-img {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+/* lg */
+@media screen and (min-width:992px) {
+    .about {
+        font-size: 60px;
+    }
+
+    .line {
+        height: 6px;
+        width: 200px;
+    }
+    .fon-size {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #abo-para{
+        font-size: 17px;
+    }
+    .abo-para a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .room-img , .room-img-2 {
+        height: 300px;
+    }
+    #abo-para1 , #abo-para2 , #para-abo , #para-abo1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-img {
+        background-size: contain;
+    }
+    .nav-bar-font {
+        display: block;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .nav-bar-list {
+        display: none;
+    }
+    .room-img , .room-img-2 {
+        height: 200px;
+    }
+    .line2 {
+        display: none;
+    }
+    .hei-frame {
+        height: 350px;
+    }
+}
+
+/* xl */
+@media screen and (min-width:1200px) {
+    .fon-size {
+        font-size: 16px;
+    }
+}
